@@ -1,3 +1,4 @@
+import react from 'react';
 import Logo from '../../assets/agriTradeLogo.png'
 
 function Home() {

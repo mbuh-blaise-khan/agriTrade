@@ -1,8 +1,8 @@
 import React from 'react';
 
-import blaiseImage from '../../assets/KTL2.jpeg';
-import ebaneckImage from '../../assets/KTL3.png';
-import tabitImage from '../../assets/KTL5.jpeg';
+import blaiseImage from '../../assets/blaiseImage.jpg';
+import ebaneckImage from '../../assets/ebaneckImage.jpg';
+import tabitImage from '../../assets/tabitImage.jpg';
 import nImage from '../../assets/KTL6.jpeg';
 
 import bImage from '../../assets/backgroundImage.avif';
@@ -120,7 +120,7 @@ const About = () => {
                         Get Started
                     </button>
                 </section>
-            </main>
+            </main> 
             
             {/* Footer */}
             <footer className="bg-gray-800 text-gray-400 py-6 text-center text-sm">
