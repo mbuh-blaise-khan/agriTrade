@@ -11,7 +11,7 @@ const Contact = () => {
         {/* Contact Form Section */}
         <section className="bg-white p-8 rounded-lg shadow-md">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Contact Us</h1>
-          <p className="text-gray-600 mb-8">
+          <p className="text-green-600 mb-8">
             We're here to help! Reach out to us with any questions, feedback, or inquiries. Our team is dedicated to providing you with the best possible support and assistance.
           </p>
           <form className="space-y-6">
@@ -21,7 +21,7 @@ const Contact = () => {
                 type="text" 
                 id="name" 
                 placeholder="Enter your name" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500" 
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -30,7 +30,7 @@ const Contact = () => {
                 type="email" 
                 id="email" 
                 placeholder="Enter your email" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500" 
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -39,7 +39,7 @@ const Contact = () => {
                 type="text" 
                 id="subject" 
                 placeholder="Enter the subject" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500" 
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -48,12 +48,12 @@ const Contact = () => {
                 id="message" 
                 rows="5" 
                 placeholder="Enter the message" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 resize-none"
+                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600 resize-none"
               ></textarea>
             </div>
             <button 
               type="submit" 
-              className="w-full py-3 px-6 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition-colors"
+              className="w- py-3 px-6 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition-colors"
             >
               Submit
             </button>
@@ -65,17 +65,17 @@ const Contact = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Additional Contact Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-gray-700">Phone</h3>
+              <h3 className="text-lg font-semibold text-green-600">Phone</h3>
               <p className="text-gray-600">+(237) 675318953</p>
             </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-gray-700">Email</h3>
+              <h3 className="text-lg font-semibold text-green-600">Email</h3>
               <p className="text-gray-600">Technovators@agritrade.com</p>
             </div>
             <div className="space-y-2 col-span-2">
-              <h3 className="text-lg font-semibold text-gray-700">Address</h3>
+              <h3 className="text-lg font-semibold text-green-600">Address</h3>
               <p className="text-gray-600">
-                Afayl-Molyko, Buea.<br />
+                Afayi-Molyko, Buea.<br />
                 CMR
               </p>
             </div>

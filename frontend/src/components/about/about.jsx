@@ -5,7 +5,7 @@ import ebaneckImage from '../../assets/ebaneckImage.jpg';
 import tabitImage from '../../assets/tabitImage.jpg';
 import nImage from '../../assets/KTL6.jpeg';
 
-import bImage from '../../assets/backgroundImage.avif';
+import image from '../../assets/image.png';
 
 const teamMembers = [
     { name: 'Blaise Khan', title: 'CEO', imageUrl: blaiseImage },
@@ -19,29 +19,29 @@ const About = () => {
         <div className="bg-white text-gray-800 font-sans">
             {/* Hero Section */}
             <header 
-                className="bg-no-repeat h-screen flex items-center justify-center p-4"
-                style={{ backgroundImage: `url(${bImage})`,
-                backgroundPosition: '50%', 
-                backgroundSize: '100% 100%'
-                }}>
-             
-                <div className="text-center text-black  bg-opacity-40 p-8 rounded-lg">
-                    <h1 className="!no-underline text-5xl md:text-6xl font-bold leading-tight">
-                        Connecting Farmers and Sellers
-                    </h1>
-                    <p className="mt-4 max-w-2xl text-lg">
-                        AgriTrade is a platform that bridges the gap between farmers and sellers, creating a seamless marketplace for agricultural products.
-                    </p>
-                    <button className="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full shadow-lg transition duration-300">
-                        Explore Products
-                    </button>
-                </div>
+             className="relative bg-no-repeat h-screen flex items-center justify-center font-sans"
+  style={{ backgroundImage: `url(${image})`, backgroundPosition: '50% 50%', backgroundSize: '100% 100%' }}
+>
+  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+    <div className="text-center text-white">
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        Connecting Farmers and Sellers
+      </h1>
+      <p className="mt-4 max-w-2xl text-lg mx-auto">
+        AgriTrade is a platform that bridges the gap between farmers and sellers, creating a seamless marketplace for agricultural products.
+      </p>
+      <button className="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full">
+        Explore Products
+      </button>
+    </div>
+  </div>
+
             </header>
 
             <main className="container mx-auto px-4 py-12">
                 {/* Mission Section */}
                 <section className="text-center py-12">
-                    <h2 className="no underline text-3xl font-bold text-gray-800">Our Mission</h2>
+                    <h2 className=" text-3xl font-bold text-gray-800">Our Mission</h2>
                     <p className="mt-4 max-w-4xl mx-auto text-lg leading-relaxed">
                         At AgriTrade, our mission is to empower farmers and sellers by providing a transparent and efficient platform for trading agricultural goods. We strive to create a community where quality products meet reliable buyers, fostering growth and sustainability in the agricultural sector.
                     </p>
@@ -67,7 +67,7 @@ const About = () => {
                                     className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg"
                                 />
                                 <h3 className="mt-4 text-xl font-semibold">{member.name}</h3>
-                                <p className="text-sm text-gray-600">{member.title}</p>
+                                <p className="text-sm text-green-600">{member.title}</p>
                             </div>
                         ))}
                     </div>
@@ -121,22 +121,7 @@ const About = () => {
                     </button>
                 </section>
             </main> 
-            
-            {/* Footer */}
-            <footer className="bg-gray-800 text-gray-400 py-6 text-center text-sm">
-                <div className="container mx-auto">
-                    <p className="mb-2">
-                        &copy; 2025 AgriTrade. All rights reserved.
-                    </p>
-                    <div className="flex justify-center space-x-4">
-                        <a href="#" className="hover:text-white">About Us</a>
-                        <a href="#" className="hover:text-white">Contact</a>
-                        <a href="#" className="hover:text-white">Privacy Policy</a>
-                        <a href="#" className="hover:text-white">Terms of Service</a>
-                    </div>
                 </div>
-            </footer>
-        </div>
     );
 };
 
