@@ -16,20 +16,20 @@ function Login() {
             type="text"
             placeholder="Username or Email"
             required
-            className="w-full bg-[#f5f7f6] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="w-full  border rounded px-4 py-3 text-lg placeholder:text-green-600 focus:outline-none focus:ring-1 focus:ring-green-500"
           />
           <input
             type="password"
             placeholder="Password"
             required
-            className="w-full bg-[#f5f7f6] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="w-full border rounded px-4 py-3 text-lg placeholder:text-green-600 focus:outline-none focus:ring-1 focus:ring-green-500"
           />
 
           {/* Forgot Password Link */}
           <div className="text-right">
             <Link
               to="/forgot-password"
-              className="text-green-700 text-base font-medium hover:underline"
+              className="text-green-600 text-base font-medium hover:underline"
             >
               Forgot Password?
             </Link>
@@ -38,7 +38,7 @@ function Login() {
           {/* Button */}
           <button
             type="submit"
-            className="w-full bg-[#2db22d] text-white text-lg font-semibold rounded py-3 hover:bg-green-700 transition duration-200"
+            className="w-full bg-[#8be75a] text-black-grey text-lg font-bold rounded py-3 hover:bg-green-600 transition duration-200"
           >
             Login
           </button>
@@ -49,7 +49,7 @@ function Login() {
           New to AgriTrade?{" "}
           <Link
             to="/signup"
-            className="text-green-700 font-semibold hover:underline"
+            className="text-green-600 font-semibold hover:underline"
           >
             Sign Up
           </Link>

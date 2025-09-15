@@ -21,7 +21,7 @@ const Contact = () => {
                 type="text" 
                 id="name" 
                 placeholder="Enter your name" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
+                className="w-full mt-1 p-3 border  rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -30,7 +30,7 @@ const Contact = () => {
                 type="email" 
                 id="email" 
                 placeholder="Enter your email" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
+                className="w-full mt-1 p-3 border rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -39,7 +39,7 @@ const Contact = () => {
                 type="text" 
                 id="subject" 
                 placeholder="Enter the subject" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
+                className="w-full mt-1 p-3 border rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600" 
               />
             </div>
             <div>
@@ -48,12 +48,12 @@ const Contact = () => {
                 id="message" 
                 rows="5" 
                 placeholder="Enter the message" 
-                className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600 resize-none"
+                className="w-full mt-1 p-3 border rounded-md focus:outline-none focus:ring-1 focus:ring-green-500 placeholder-green-600 resize-none"
               ></textarea>
             </div>
             <button 
               type="submit" 
-              className="w- py-3 px-6 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition-colors"
+              className="w- py-3 px-6 bg-[#8be75a] text-black font-bold rounded-md hover:bg-green-500 transition-colors"
             >
               Submit
             </button>
@@ -84,7 +84,7 @@ const Contact = () => {
 
         {/* Map Section */}
         <section className="mt-12">
-          <div className="w-full h-96 rounded-lg overflow-hidden border border-gray-300">
+          <div className="w-full h-96 rounded-lg overflow-hidden border border-gray-400">
             {/* The image is a placeholder for an embedded map. A real implementation would use an iframe or a mapping library. */}
             <div 
               className="w-full h-full bg-cover bg-center" 

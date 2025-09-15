@@ -3,7 +3,7 @@ import React from 'react';
 import blaiseImage from '../../assets/blaiseImage.jpg';
 import ebaneckImage from '../../assets/ebaneckImage.jpg';
 import tabitImage from '../../assets/tabitImage.jpg';
-import nImage from '../../assets/KTL6.jpeg';
+import nImage from '../../assets/KTL5.jpeg';
 
 import image from '../../assets/image.png';
 
@@ -30,7 +30,7 @@ const About = () => {
       <p className="mt-4 max-w-2xl text-lg mx-auto">
         AgriTrade is a platform that bridges the gap between farmers and sellers, creating a seamless marketplace for agricultural products.
       </p>
-      <button className="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full">
+      <button className="mt-8 px-6 py-3 bg-[#8be75a] hover:bg-green-600 text-black font-bold rounded-full">
         Explore Products
       </button>
     </div>
@@ -87,7 +87,7 @@ const About = () => {
                         <img 
                             src= {ebaneckImage} 
                             alt="Testimonial 1" 
-                            className="rounded-lg shadow-lg max-w-full h-auto"
+                            className="rounded-lg shadow-lg max-w-100 h-100"
                         />
                     </div>
                 </section>
@@ -98,7 +98,7 @@ const About = () => {
                         <img 
                             src={tabitImage} 
                             alt="Trading" 
-                            className="rounded-lg shadow-lg max-w-full h-auto"
+                            className="rounded-lg shadow-lg max-w-100 h-100"
                         />
                     </div>
                     <div className="md:w-1/2 order-1 md:order-2">
@@ -116,7 +116,7 @@ const About = () => {
                     <p className="mt-4 text-lg max-w-2xl mx-auto">
                         Connect with a vast network of farmers and sellers. Start trading agricultural products with ease and confidence.
                     </p>
-                    <button className="mt-8 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-full shadow-lg transition duration-300">
+                    <button className="mt-8 px-8 py-4 bg-[#8be75a] hover:bg-green-600 text-black font-bold rounded-full shadow-lg transition duration-300">
                         Get Started
                     </button>
                 </section>
