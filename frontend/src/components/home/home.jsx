@@ -8,6 +8,7 @@ import corn from '../../assets/corn.jpg';
 import groundnuts from '../../assets/groundnuts.jpg';
 import cocoyams from '../../assets/cocoyams.jpg';
 import apples from '../../assets/apples.jpg';
+import { Link } from 'react-router-dom';
 
 
 const RotatingText = ({ phrases }) => {
@@ -125,16 +126,16 @@ const Home = () => {
           </div>
 
           <div className="relative flex-wrap gap-3 flex justify-center z-10">
-            <button
+            <Link to="/products"
               className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#8be75a] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] transition-transform duration-300 hover:scale-105"
             >
               <span className="truncate">Browse Products</span>
-            </button>
-            <button
+            </Link>
+            <Link to="/signup"
               className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#ecf3e8] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] transition-transform duration-300 hover:scale-105"
             >
               <span className="truncate">Become a Farmer</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -270,11 +271,11 @@ const Home = () => {
               Access a wide variety of fresh, locally-sourced produce directly from farmers. Enjoy transparent pricing, quality assurance, and the convenience of direct delivery, all while supporting local agriculture.
             </p>
             <div className="flex px-4 py-3 justify-start">
-              <button
+              <Link to="/products"
                 className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#8be75a] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] transition-transform duration-300 hover:scale-105"
               >
                 <span className="truncate">Start Buying Now</span>
-              </button>
+              </Link>
             </div>
 
             {/* Community Section */}
@@ -283,11 +284,11 @@ const Home = () => {
               Discover how AgriTrade has positively impacted farmers and buyers. Read their stories and experiences on our About Us page.
             </p>
             <div className="flex px-4 py-3 justify-start">
-              <button
+              <Link to="/about"
                 className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#ecf3e8] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] transition-transform duration-300 hover:scale-105"
               >
                 <span className="truncate">Read Full Testimonials</span>
-              </button>
+              </Link>
             </div>
 
             {/* Get Started Section */}
@@ -303,11 +304,11 @@ const Home = () => {
                 </div>
                 <div className="flex flex-1 justify-center">
                   <div className="flex justify-center">
-                    <button
+                    <Link to="/signup"
                       className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#8be75a] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow transition-transform duration-300 hover:scale-105"
                     >
                       <span className="truncate">Sign Up as a Buyer</span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

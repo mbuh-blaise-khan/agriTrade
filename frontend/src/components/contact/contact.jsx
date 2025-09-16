@@ -66,11 +66,11 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-green-600">Phone</h3>
-              <p className="text-gray-600">+(237) 675318953</p>
+              <p className="text-gray-600">+(237) 675318953 / 677 503 054</p>
             </div>
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-green-600">Email</h3>
-              <p className="text-gray-600">Technovators@agritrade.com</p>
+              <p className="text-gray-600">technovators@agritrade.com</p>
             </div>
             <div className="space-y-2 col-span-2">
               <h3 className="text-lg font-semibold text-green-600">Address</h3>

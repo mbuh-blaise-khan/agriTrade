@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function SignUp() {
-  const [showPassword, setShowPassword] = useState(false); // toggle password visibility
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-white">
@@ -14,26 +14,29 @@ function SignUp() {
 
         {/* Form */}
         <form className="space-y-6">
+          {/* Full Name */}
           <input
             type="text"
             placeholder="Full Name"
             required
-            className="w-full bg-[#f0f7f1] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="w-full bg-white border border-gray-300 rounded px-4 py-3 text-lg placeholder-green-600 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600"
           />
+
+          {/* Email */}
           <input
             type="email"
             placeholder="Email"
             required
-            className="w-full bg-[#f0f7f1] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="w-full bg-white border border-gray-300 rounded px-4 py-3 text-lg placeholder-green-600 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600"
           />
 
-          {/* Password Field */}
+          {/* Password */}
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
               required
-              className="w-full bg-[#f0f7f1] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="w-full bg-white border border-gray-300 rounded px-4 py-3 text-lg placeholder-green-600 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600"
             />
             <button
               type="button"
@@ -44,13 +47,13 @@ function SignUp() {
             </button>
           </div>
 
-          {/* Confirm Password Field */}
+          {/* Confirm Password */}
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Confirm Password"
               required
-              className="w-full bg-[#f0f7f1] border rounded px-4 py-3 text-lg placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="w-full bg-white border border-gray-300 rounded px-4 py-3 text-lg placeholder-green-600 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600"
             />
             <button
               type="button"
@@ -61,7 +64,7 @@ function SignUp() {
             </button>
           </div>
 
-          {/* Farmer / Buyer checkboxes */}
+          {/* Farmer / Buyer */}
           <div className="flex space-x-6 text-lg">
             <label className="flex items-center space-x-2">
               <input
@@ -69,7 +72,7 @@ function SignUp() {
                 name="role"
                 value="farmer"
                 required
-                className="w-5 h-5 text-green-600"
+                className="w-5 h-5 text-green-600 checked:bg-green-600"
               />
               <span>Farmer</span>
             </label>
@@ -80,25 +83,25 @@ function SignUp() {
                 name="role"
                 value="buyer"
                 required
-                className="w-5 h-5 text-green-600"
+                className="w-5 h-5 text-green-600 checked:bg-green-600"
               />
               <span>Buyer</span>
             </label>
           </div>
 
-          {/* Submit button */}
+          {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#8be75a] text-black text-lg font-bold rounded py-3 hover:bg-green-600 transition duration-200"
+            className="w-full bg-green-500 text-white text-lg font-bold rounded py-3 hover:bg-green-600 transition duration-200"
           >
             Sign Up
           </button>
         </form>
 
-        {/* Bottom link */}
-        <div className="text-center mt-6 text-lg text-gray-700">
+        {/* Login link */}
+        <div className="text-center mt-6 text-lg text-orange-500">
           Already have an account?{" "}
-          <Link to="/login" className="text-green-700 font-semibold hover:underline">
+          <Link to="/login" className="font-semibold hover:underline">
             Login
           </Link>
         </div>
