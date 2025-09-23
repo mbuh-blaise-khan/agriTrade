@@ -1,0 +1,96 @@
+[debug] [2025-09-23T14:10:53.777Z] ----------------------------------------------------------------------
+[debug] [2025-09-23T14:10:53.782Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-09-23T14:10:53.783Z] CLI Version:   14.17.0
+[debug] [2025-09-23T14:10:53.783Z] Platform:      win32
+[debug] [2025-09-23T14:10:53.784Z] Node Version:  v23.8.0
+[debug] [2025-09-23T14:10:53.784Z] Time:          Tue Sep 23 2025 15:10:53 GMT+0100 (West Africa Standard Time)
+[debug] [2025-09-23T14:10:53.784Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-23T14:10:53.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-23T14:10:53.794Z] > authorizing via signed-in user (ebaneckkeziah@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tiabo\Desktop\Internship Task\agriTrade
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-09-23T14:12:51.980Z] Checked if tokens are valid: true, expires at: 1758639798248
+[debug] [2025-09-23T14:12:51.981Z] Checked if tokens are valid: true, expires at: 1758639798248
+[debug] [2025-09-23T14:12:51.984Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-09-23T14:12:51.984Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"agritrade-website-2025"}
+[debug] [2025-09-23T14:13:06.991Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1/projects:checkProjectId, {"headers":{},"method":"POST","signal":{},"body":"{\"proposedId\":\"agritrade-website-2025\"}"}): AbortError: The user aborted a request.
+[debug] [2025-09-23T14:13:06.991Z] Couldn't check if project ID agritrade-website-2025 is available. Original error: FirebaseError: Failed to check if project ID is available. See firebase-debug.log for more info.
+[debug] [2025-09-23T14:13:50.647Z] Checked if tokens are valid: true, expires at: 1758639798248
+[debug] [2025-09-23T14:13:50.647Z] Checked if tokens are valid: true, expires at: 1758639798248
+[debug] [2025-09-23T14:13:50.648Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-09-23T14:13:50.648Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"agritrade-website-2025","name":"contact1"}
+[debug] [2025-09-23T14:14:05.650Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects, {"headers":{},"method":"POST","signal":{},"body":"{\"projectId\":\"agritrade-website-2025\",\"name\":\"contact1\"}"}): AbortError: The user aborted a request.
+[debug] [2025-09-23T14:14:10.677Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:614:17)
+    at process.processTimers (node:internal/timers:549:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-09-23T15:11:57.813Z] ----------------------------------------------------------------------
+[debug] [2025-09-23T15:11:57.816Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-09-23T15:11:57.817Z] CLI Version:   14.17.0
+[debug] [2025-09-23T15:11:57.817Z] Platform:      win32
+[debug] [2025-09-23T15:11:57.817Z] Node Version:  v23.8.0
+[debug] [2025-09-23T15:11:57.817Z] Time:          Tue[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-09-23T15:15:35.700Z] Checked if tokens are valid: false, expires at: 1758639798248
+[debug] [2025-09-23T15:15:35.701Z] Checked if tokens are valid: false, expires at: 1758639798248
+[debug] [2025-09-23T15:15:35.701Z] > refreshing access token with scopes: []
+[debug] [2025-09-23T15:15:35.704Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-23T15:15:35.704Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-23T15:15:46.566Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------da9a31ea5b600933695f96ae","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: socket hang up
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-09-23T15:15:46.569Z] Couldn't check if project ID agritrade-2025-contact is available. Original error: FirebaseError: Failed to check if project ID is available. See firebase-debug.log for more info.
+[debug] [2025-09-23T15:16:06.816Z] Checked if tokens are valid: false, expires at: 1758639798248
+[debug] [2025-09-23T15:16:06.816Z] Checked if tokens are valid: false, expires at: 1758639798248
+[debug] [2025-09-23T15:16:06.816Z] > refreshing access token with scopes: []
+[debug] [2025-09-23T15:16:06.817Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-09-23T15:16:06.817Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-23T15:16:07.879Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-09-23T15:16:07.879Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-09-23T15:16:07.930Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-09-23T15:16:07.930Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"agritrade-2025-contact","name":"contact2"}
+[debug] [2025-09-23T15:16:09.540Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-09-23T15:16:09.540Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5369301057057461903"}
+[debug] [2025-09-23T15:16:09.542Z] Checked if tokens are valid: true, expires at: 1758644166879
+[debug] [2025-09-23T15:16:09.542Z] Checked if tokens are valid: true, expires at: 1758644166879
+[debug] [2025-09-23T15:16:09.542Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5369301057057461903 [none]
+[debug] [2025-09-23T15:16:10.330Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5369301057057461903 200
+[debug] [2025-09-23T15:16:10.330Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5369301057057461903 {"name":"operations/create_project.global.5369301057057461903","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-09-23T15:16:11.045Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:215:29)
+    at async createFirebaseProjectAndLog (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:83:9)
+    at async promptAndCreateNewProject (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:31:12)
+    at async Object.doSetup (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:89:31)
+    at async init (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:68:13)
+    at async Command.initAction [as actionFn] (C:\Users\tiabo\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:214:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

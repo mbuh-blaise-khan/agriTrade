@@ -390,7 +390,7 @@ const handleSeeMore = () => {
       {/* Header */}
       <header className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="text-center md:text-left">
-          <h1 className="text-2xl font-bold text-green-900">🌿 AgriMarket Cameroon</h1>
+          <h1 className="text-2xl font-bold text-green-900">AgriTrade Cameroon</h1>
           <p className="text-sm text-gray-600 max-w-lg">
             Fresh produce you can trust — locally grown, fairly priced, and delivered fresh. Your marketplace for real farm produce in Cameroon.
           </p>

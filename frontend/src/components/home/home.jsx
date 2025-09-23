@@ -3,7 +3,7 @@ import react, {useState, useEffect } from 'react';
 import { FaSearch, FaShoppingCart, FaHeart } from 'react-icons/fa';
 
 
-import homepagevideoSrc from '../../assets/homepagevideo.mp4';
+import homepagevideoSrc from '../../assets/homepagevideo2.mp4';
 import corn from '../../assets/corn.jpg';
 import groundnuts from '../../assets/groundnuts.jpg';
 import cocoyams from '../../assets/cocoyams.jpg';
@@ -65,33 +65,6 @@ const Home = () => {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col bg-[#f9fbf8] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
-
-        <div className="flex items-center space-x-4 p-4 border-b border-gray-200">
-            {/* Search Bar Section */}
-            <div className="flex items-center bg-gray-100 rounded-lg flex-grow">
-                <input
-                    type="text"
-                    placeholder="Search for products..."
-                    className="p-2 w-full border bg-transparent outline-none text-gray-700 placeholder focus:ring-1"
-                />
-                <FaSearch className="text-gray-500 mx-3" />
-            </div>
-
-            {/* Icons and Checkout Section */}
-            <div className="flex items-center space-x-6">
-                <div className="flex items-center space-x-2 cursor-pointer">
-                    <FaShoppingCart className=" text-[#8be75a] text-xl" />
-                    <span className="text-gray-800">My Cart</span>
-                </div>
-                <div className="flex items-center space-x-2 cursor-pointer">
-                    <FaHeart className="text-[#8be75a] text-xl" />
-                    <span className="text-gray-900">Wishlist</span>
-                </div>
-                <button className="bg-[#8be75a] text-black py-2 px-4 font-bold rounded-lg hover:bg-green-700 transition-colors">
-                    Checkout
-                </button>
-            </div>
-            </div>
 
         {/* Hero Section with Video Background */}
 <div className="px-40 flex flex-1 justify-center py-5">
@@ -258,11 +231,11 @@ const Home = () => {
               Expand your market reach and connect directly with buyers seeking high-quality produce. AgriTrade offers a platform to showcase your products, manage your sales, and receive fair compensation for your hard work.
             </p>
             <div className="flex px-4 py-3 justify-start">
-              <button
+              <Link to="/signup"
                 className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#8be75a] text-[#131b0e] text-sm font-bold leading-normal tracking-[0.015em] transition-transform duration-300 hover:scale-105"
               >
                 <span className="truncate">Become a Farmer</span>
-              </button>
+                </Link>
             </div>
 
             {/* Benefits for Buyers */}
